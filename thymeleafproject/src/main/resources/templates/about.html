@@ -1,0 +1,24 @@
+<html xmlns="https://www.thymeleaf.org/">
+	
+	<title>About</title>
+	<body>
+		<h1>---------------------Hi this is for The About Section-------------------------------</h1>
+		<h3 th:text="${name}"></h3>
+		<h3 th:text="${yeas}"></h3>
+		
+		<h1>---------------------This is for if else condition--------------------------</h1>
+		<h3 th:text="${check}"></h3>
+		<h3 th:style="${check} ? 'color:green':'color:Red'"><span th:text="${text=='PAPNNA'}? 'Text' :'text'"></span></h3>
+		
+		<h1>---------------------This is for The Port--------------------------</h1>
+		<h3><span th:text="${port}"></span> is for the port number for thymeleaf application</h3>
+		<h1>---------------------This is For The List--------------------------</h1>
+		
+		<span th:each="l: ${list}">
+			<li th:text="${l}"></li>
+		</span>
+		
+		<h1>---------------------This is The End--------------------------</h1>
+	</body>
+</html>
+
